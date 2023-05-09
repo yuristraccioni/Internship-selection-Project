@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Técnico - Dell IT Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/import-csv-values.js" defer></script>
+    <script src="scripts/script-func1.js" defer></script>
+    <script src="scripts/script-func2.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="func-1">
+            <header>
+                <h1>Funcionalidade 1</h1>
+            </header>
+            <div id="cidades">
+                <div id="origem">
+                    <h4>Origem</h4>
+                    <select id="origem-select">
+                        <option value="0">Aracaju - SE</option>
+                        <option value="1">Belém - PA</option>
+                        <option value="2">Belo Horizonte - MG</option>
+                        <option value="3">Brasilia - DF</option>
+                        <option value="4">Campo Grande - MS</option>
+                        <option value="5">Cuiabá - MT</option>
+                        <option value="6">Curitiba - PR</option>
+                        <option value="7">Florianópolis - SC</option>
+                        <option value="8">Fortaleza - CE</option>
+                        <option value="9">Goiania - GO</option>
+                        <option value="10">João Pessoa - PB</option>
+                        <option value="11">Maceió - AL</option>
+                        <option value="12">Manaus - AM</option>
+                        <option value="13">Natal - RN</option>
+                        <option value="14">Porto Alegre - RS</option>
+                        <option value="15">Porto Velho - RO</option>
+                        <option value="16">Recife - PE</option>
+                        <option value="17">Rio Branco - AC</option>
+                        <option value="18">Rio de Janeiro - RJ</option>
+                        <option value="19">Salvador - BH</option>
+                        <option value="20">São Luis - MA</option>
+                        <option value="21">São Paulo - SP</option>
+                        <option value="22">Teresina - PI</option>
+                        <option value="23">Vitória - ES</option>
+                    </select>
+                </div>
+                <div id="destino">
+                    <h4>Destino</h4>
+                    <select id="destino-select">
+                        <option value="ARACAJU">Aracaju - SE</option>
+                        <option value="BELEM">Belém - PA</option>
+                        <option value="BELO HORIZONTE">Belo Horizonte - MG</option>
+                        <option value="BRASILIA">Brasilia - DF</option>
+                        <option value="CAMPO GRANDE">Campo Grande - MS</option>
+                        <option value="CUIABA">Cuiabá - MT</option>
+                        <option value="CURITIBA">Curitiba - PR</option>
+                        <option value="FLORIANOPOLIS">Florianópolis - SC</option>
+                        <option value="FORTALEZA">Fortaleza - CE</option>
+                        <option value="GOIANIA">Goiania - GO</option>
+                        <option value="JOAO PESSOA">João Pessoa - PB</option>
+                        <option value="MACEIO">Maceió - AL</option>
+                        <option value="MANAUS">Manaus - AM</option>
+                        <option value="NATAL">Natal - RN</option>
+                        <option value="PORTO ALEGRE">Porto Alegre - RS</option>
+                        <option value="PORTO VELHO">Porto Velho - RO</option>
+                        <option value="RECIFE">Recife - PE</option>
+                        <option value="RIO BRANCO">Rio Branco - AC</option>
+                        <option value="RIO DE JANEIRO">Rio de Janeiro - RJ</option>
+                        <option value="SALVADOR">Salvador - BH</option>
+                        <option value="SAO LUIS">São Luis - MA</option>
+                        <option value="SAO PAULO">São Paulo - SP</option>
+                        <option value="TERESINA">Teresina - PI</option>
+                        <option value="VITORIA">Vitória - ES</option>
+                    </select>
+                </div>
+            </div>
+            <div id="mod-calc">
+                <div id="modalidade">
+                    <h4>Modalidade</h4>
+                    <select id="modalidade-select">
+                        <option value="4.87">Caminhão de pequeno porte (R$4,87 R$/Km)</option>
+                        <option value="11.92">Caminhão de médio porte (R$11,92 R$/Km)</option>
+                        <option value="27.44">Caminhão de grande porte (R$27,44 R$/Km)</option>
+                    </select>
+                </div>
+                <div id="calc-1">
+                    <button type="submit" class="run-1">
+                        <i class="fa-solid fa-truck"></i> Calcular
+                    </button>
+                </div>
+            </div>
+            <div id="resultado-container">
+                <div id="resultado">
+                </div>
+            </div>
+        </div>
+        <div class="func-2">
+            <header>
+                <h1>Funcionalidade 2</h1>
+            </header>
+            <div id="cidades-2">
+                <div id="origem-2">
+                    <h4>Origem</h4>
+                    <select id="origem-select-2">
+                        <option value="0">Aracaju - SE</option>
+                        <option value="1">Belém - PA</option>
+                        <option value="2">Belo Horizonte - MG</option>
+                        <option value="3">Brasilia - DF</option>
+                        <option value="4">Campo Grande - MS</option>
+                        <option value="5">Cuiabá - MT</option>
+                        <option value="6">Curitiba - PR</option>
+                        <option value="7">Florianópolis - SC</option>
+                        <option value="8">Fortaleza - CE</option>
+                        <option value="9">Goiania - GO</option>
+                        <option value="10">João Pessoa - PB</option>
+                        <option value="11">Maceió - AL</option>
+                        <option value="12">Manaus - AM</option>
+                        <option value="13">Natal - RN</option>
+                        <option value="14">Porto Alegre - RS</option>
+                        <option value="15">Porto Velho - RO</option>
+                        <option value="16">Recife - PE</option>
+                        <option value="17">Rio Branco - AC</option>
+                        <option value="18">Rio de Janeiro - RJ</option>
+                        <option value="19">Salvador - BH</option>
+                        <option value="20">São Luis - MA</option>
+                        <option value="21">São Paulo - SP</option>
+                        <option value="22">Teresina - PI</option>
+                        <option value="23">Vitória - ES</option>
+                    </select>
+                </div>
+                <div id="destino-2">
+                    <h4>Adicione até 2 paradas</h4>
+                    <div id="destino-paradas">
+                        <button type="button" class="adc-paradas">
+                            <i class="fa-thin fa-plus"></i>
+                        </button>
+                    </div>
+                    <div id="paradas">
+                        <select class="destiny">
+                            <option value="ARACAJU">Aracaju - SE</option>
+                            <option value="BELEM">Belém - PA</option>
+                            <option value="BELO HORIZONTE">Belo Horizonte - MG</option>
+                            <option value="BRASILIA">Brasilia - DF</option>
+                            <option value="CAMPO GRANDE">Campo Grande - MS</option>
+                            <option value="CUIABA">Cuiabá - MT</option>
+                            <option value="CURITIBA">Curitiba - PR</option>
+                            <option value="FLORIANOPOLIS">Florianópolis - SC</option>
+                            <option value="FORTALEZA">Fortaleza - CE</option>
+                            <option value="GOIANIA">Goiania - GO</option>
+                            <option value="JOAO PESSOA">João Pessoa - PB</option>
+                            <option value="MACEIO">Maceió - AL</option>
+                            <option value="MANAUS">Manaus - AM</option>
+                            <option value="NATAL">Natal - RN</option>
+                            <option value="PORTO ALEGRE">Porto Alegre - RS</option>
+                            <option value="PORTO VELHO">Porto Velho - RO</option>
+                            <option value="RECIFE">Recife - PE</option>
+                            <option value="RIO BRANCO">Rio Branco - AC</option>
+                            <option value="RIO DE JANEIRO">Rio de Janeiro - RJ</option>
+                            <option value="SALVADOR">Salvador - BH</option>
+                            <option value="SAO LUIS">São Luis - MA</option>
+                            <option value="SAO PAULO">São Paulo - SP</option>
+                            <option value="TERESINA">Teresina - PI</option>
+                            <option value="VITORIA">Vitória - ES</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="carga">
+                <form id="item-form">
+                    <h4>Adicione os itens:</h4>
+                    <div id="itemsDiv">
+                        <button type="button" class="itemBtn">
+                            <i class="fa-thin fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="item-div">
+                        <input type="text" class="item-input" id="name" placeholder="Nome do item">
+                        <input type="text" class="item-input" id="quantity" placeholder="Quantidade">
+                        <input type="text" class="item-input" id="weight" placeholder="Peso (Kg)">
+                    </div>
+                </form>
+            </div>
+            <div id="calc-2">
+                <button type="button" class="run-2">
+                    <i class="fa-solid fa-truck"></i> Calcular
+                </button>
+                <button type="button" class="download">
+                    <i class="fa-solid fa-file"></i> Download
+                </button>
+            </div>
+            <div id="resultado-container-2">
+                <div id="resultado-2">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
